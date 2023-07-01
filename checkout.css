@@ -1,0 +1,186 @@
+* {
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+  }
+  
+  .summary{
+    flex: 1;
+    background-color: white;
+  }
+  
+  .summary h1 {
+    position: relative;
+    margin-top: 10rem;
+    text-align: center; 
+    font-size: 4rem;
+  }
+  
+  .summary hr {
+    width: 19rem;
+    height: 10px;
+    align-items: center;
+    margin: auto;
+    background-color: #FF4C4C;
+    border: none;
+  }
+  
+  .summary #axia-pic{
+    width: 400px;
+    padding-top: 2rem;
+  }
+  
+  .summary #pic {
+    align-items: center;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .overall{
+    display: flex;
+  }
+  
+  
+  .container {
+    display: flex;
+    flex: 1;
+    margin: 7.5rem 0 0 6rem;
+    background-color: white;
+  }
+  
+  .container form {
+    padding: 20px;
+    width: 700px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .container form .row .col {
+    flex: 1 1 250px;
+  }
+  
+  .container form .row .col .title {
+    font-size: 20px;
+    color: black;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .container form .row .col .inputBox {
+    margin: 15px 0;
+  }
+  
+  .container form .row .col .inputBox span {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container form .row .col .inputBox input {
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container form .row .col .inputBox input:focus {
+    border: 1px solid black;
+  }
+  
+  .container form .row .col .flex {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .container form .row .col .flex .inputBox {
+    margin-top: 5px;
+  }
+  
+  .container form .row .col .inputBox img {
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px black);
+  }
+  
+  .container form .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    background: black;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn:hover {
+    background-color: #FF4C4C;
+    color: black;
+  }
+
+  @media(max-width: 1200px){
+    .overall{
+      display: initial;
+    }
+
+    .container{
+      margin: auto;
+      position: relative; 
+      top: 45rem;
+      padding-bottom: 2rem;
+      justify-content: center;
+    }
+
+    .container form{
+      box-shadow: none;
+    }
+
+    .summary hr{
+      position: relative;
+      align-items: center;
+      margin: auto;
+      top: -33rem;
+    }
+
+    .summary h1, .summary #pic{
+      margin: auto;
+      position: relative; 
+      top: -33rem;
+    }
+  }
+
+  @media(max-width: 554px){
+
+    .container{
+      top: 38rem;
+      padding-bottom: 3rem;
+    }
+
+    .summary h1{
+      top: -68rem;
+      font-size: 3rem;
+    }
+
+    .summary hr{
+      width: 15rem;
+      top: -68rem;
+    }
+
+    .summary h2{
+      font-size: 1.7rem;
+    }
+
+    .summary #pic{
+      top: -69rem;
+    }
+
+    .summary p{
+      margin-top: -2rem;
+    }
+  }
